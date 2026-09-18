@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Georgia', serif;
+    background: #0f172a;
+    color: #fef3c7;
+    padding: 60px 40px;
+    width: 1080px;
+    height: 1080px;
+  }
+  .frame {
+    border: 2px solid #f59e0b;
+    padding: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .head { display: flex; justify-content: space-between; align-items: center; }
+  .brand { font-size: 16px; letter-spacing: 4px; color: #f59e0b; }
+  .title {
+    font-size: 96px;
+    color: #f59e0b;
+    line-height: 1;
+    letter-spacing: -3px;
+    margin-top: 20px;
+  }
+  .sub { color: #94a3b8; font-size: 22px; letter-spacing: 6px; margin-top: 8px; }
+  .price-tag {
+    display: inline-block;
+    background: #f59e0b;
+    color: #0f172a;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  .bullets {
+    margin-top: 30px;
+    font-size: 22px;
+    color: #fef3c7;
+    line-height: 1.8;
+  }
+  .bullets li { list-style: none; margin: 8px 0; }
+  .bullets li::before { content: '✓ '; color: #f59e0b; font-weight: bold; }
+  .cta {
+    margin-top: 30px;
+    background: #f59e0b;
+    color: #0f172a;
+    padding: 24px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #94a3b8;
+    margin-top: 20px;
+  }
+  .handle { color: #f59e0b; border-bottom: 1px solid #f59e0b; padding-bottom: 2px; }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div>
+    <div class="head">
+      <span class="brand">THE PROTECTOR</span>
+      <span style="font-size:32px">🏍️</span>
+    </div>
+    <h1 class="title">Bike<br>Insurance</h1>
+    <div class="sub">3 MIN GUIDE</div>
+    <div class="price-tag">From ₹800/year</div>
+  </div>
+
+  <ul class="bullets">
+    <li>Third-party cover mandatory</li>
+    <li>Zero-dep add karo sirf ₹500 mein</li>
+    <li>Personal accident ₹1 lakh free</li>
+    <li>Online claim — 30 min settlement</li>
+    <li>NCB 20%→50% (5 saal claim-free)</li>
+  </ul>
+
+  <div>
+    <div class="cta">DM "BIKE" — FREE QUOTE</div>
+    <div class="footer">
+      <span>Pankaj Kalosiya</span>
+      <span><span class="handle">@the.musafirrr__</span></span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

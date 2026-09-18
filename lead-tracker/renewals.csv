@@ -1,0 +1,4 @@
+Date,Name,Phone,Insurance Type,Policy Number,Premium,Company,Status,Renewal Date,Days Left,Notes
+2026-09-15,Test Client 1,9649228281,Bike,POL-001,3200,HDFC,Renewal Due,2026-09-15,11,Test renewal
+2026-09-20,Test Client 2,9649228281,Car,POL-002,18000,ICICI,Renewal Due,2026-09-20,16,Test renewal
+2026-10-01,Test Client 3,9649228281,Health,POL-003,22000,TATA,Renewal Due,2026-10-01,27,Test renewal

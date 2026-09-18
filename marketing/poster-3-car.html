@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Georgia', serif;
+    background: #0f172a;
+    color: #fef3c7;
+    padding: 60px 40px;
+    width: 1080px;
+    height: 1080px;
+  }
+  .frame {
+    border: 2px solid #f59e0b;
+    padding: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .head { display: flex; justify-content: space-between; align-items: center; }
+  .brand { font-size: 16px; letter-spacing: 4px; color: #f59e0b; }
+  .title {
+    font-size: 92px;
+    color: #f59e0b;
+    line-height: 1;
+    letter-spacing: -3px;
+    margin-top: 20px;
+  }
+  .sub { color: #94a3b8; font-size: 22px; letter-spacing: 6px; margin-top: 8px; }
+  .compare {
+    margin-top: 30px;
+    background: rgba(254, 243, 199, 0.05);
+    border: 1px solid #f59e0b;
+    border-radius: 12px;
+    padding: 24px;
+  }
+  .compare-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+    font-size: 22px;
+  }
+  .compare-row:last-child { border-bottom: none; }
+  .company { color: #fef3c7; }
+  .price { color: #f59e0b; font-weight: bold; }
+  .savings {
+    margin-top: 20px;
+    text-align: center;
+    color: #f59e0b;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .cta {
+    margin-top: 30px;
+    background: #f59e0b;
+    color: #0f172a;
+    padding: 24px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #94a3b8;
+    margin-top: 20px;
+  }
+  .handle { color: #f59e0b; border-bottom: 1px solid #f59e0b; padding-bottom: 2px; }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div>
+    <div class="head">
+      <span class="brand">THE PROTECTOR</span>
+      <span style="font-size:32px">🚗</span>
+    </div>
+    <h1 class="title">Car<br>Insurance</h1>
+    <div class="sub">COMPARE & SAVE</div>
+  </div>
+
+  <div class="compare">
+    <div class="compare-row"><span class="company">HDFC Ergo</span><span class="price">₹14,200</span></div>
+    <div class="compare-row"><span class="company">ICICI Lombard</span><span class="price">₹13,800</span></div>
+    <div class="compare-row"><span class="company">TATA AIG</span><span class="price">₹15,100</span></div>
+    <div class="compare-row"><span class="company">Bajaj Allianz</span><span class="price">₹14,600</span></div>
+  </div>
+
+  <div class="savings">💰 Average ₹6,500/year SAVED</div>
+
+  <div>
+    <div class="cta">DM "CAR" — FREE COMPARISON</div>
+    <div class="footer">
+      <span>Pankaj Kalosiya</span>
+      <span><span class="handle">@the.musafirrr__</span></span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

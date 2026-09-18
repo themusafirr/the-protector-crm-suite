@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Protector — Insurance for Real Indians | @the.musafirrr__</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Georgia', serif;
+    background: #0f172a;
+    color: #fef3c7;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    position: relative;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 20px; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f59e0b, transparent);
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 20px; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f59e0b, transparent);
+  }
+  .brand-mark {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #f59e0b;
+    border-bottom: 1px solid #f59e0b;
+    padding-bottom: 4px;
+  }
+  .shield {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.4));
+  }
+  h1 {
+    font-size: clamp(48px, 8vw, 80px);
+    color: #f59e0b;
+    margin-bottom: 16px;
+    letter-spacing: -2px;
+    text-align: center;
+  }
+  .tagline {
+    font-size: clamp(16px, 2.5vw, 22px);
+    color: #fef3c7;
+    opacity: 0.85;
+    text-align: center;
+    margin-bottom: 50px;
+    font-style: italic;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .card {
+    background: rgba(254, 243, 199, 0.05);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    border-radius: 12px;
+    padding: 24px 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .card:hover {
+    background: rgba(245, 158, 11, 0.1);
+    border-color: #f59e0b;
+    transform: translateY(-4px);
+  }
+  .card .icon { font-size: 32px; margin-bottom: 8px; }
+  .card .label { font-size: 14px; color: #f59e0b; font-weight: bold; }
+  .card .sub { font-size: 11px; color: #94a3b8; margin-top: 4px; }
+  .cta {
+    background: #f59e0b;
+    color: #0f172a;
+    padding: 18px 40px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  .cta:hover { transform: translateY(-2px); box-shadow: 0 15px 40px rgba(245, 158, 11, 0.5); }
+  .trust {
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 13px;
+    color: #94a3b8;
+  }
+  .trust span { display: flex; align-items: center; gap: 6px; }
+  .footer-mark {
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    font-size: 13px;
+    color: #94a3b8;
+    text-align: right;
+  }
+  .footer-mark .handle {
+    color: #f59e0b;
+    border-bottom: 1px solid #f59e0b;
+    padding-bottom: 2px;
+  }
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="brand-mark">THE PROTECTOR</div>
+
+  <svg class="shield" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 5 L90 20 L90 50 Q90 80 50 95 Q10 80 10 50 L10 20 Z"
+          fill="none" stroke="#f59e0b" stroke-width="3"/>
+    <path d="M50 15 L82 27 L82 50 Q82 75 50 87 Q18 75 18 50 L18 27 Z"
+          fill="#f59e0b" opacity="0.15"/>
+    <path d="M35 50 L45 60 L65 40" fill="none" stroke="#f59e0b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+
+  <h1>The Protector</h1>
+  <p class="tagline">Tum chal apni manzil ki aur,<br>hum hain tumhare saath.</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon">🏥</div>
+      <div class="label">Health</div>
+      <div class="sub">Family Floater</div>
+    </div>
+    <div class="card">
+      <div class="icon">🏍️</div>
+      <div class="label">Bike</div>
+      <div class="sub">3rd Party + Zero-Dep</div>
+    </div>
+    <div class="card">
+      <div class="icon">🚗</div>
+      <div class="label">Car</div>
+      <div class="sub">Comprehensive + NCB</div>
+    </div>
+    <div class="card">
+      <div class="icon">👨‍👩‍👧</div>
+      <div class="label">Life</div>
+      <div class="sub">Term Plan 1Cr+</div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/919649228281?text=Hi%20Pankaj%2C%20mujhe%20insurance%20quote%20chahiye" class="cta">📋 Free Quote — 2 min mein</a>
+
+  <div class="trust">
+    <span>✅ IRDAI Licensed</span>
+    <span>⚡ 4 Companies Compare</span>
+    <span>💰 Best Price Guaranteed</span>
+    <span>📞 Personal Agent</span>
+  </div>
+
+  <div class="footer-mark">
+    Follow for more!<br>
+    <span class="handle">@the.musafirrr__</span>
+  </div>
+</section>
+</body>
+</html>
